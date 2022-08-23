@@ -5,20 +5,10 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Point p1 = new()
-        {
-            x1 = 1,
-            y1 = 3,
-            symbol = '*'
-        };
+        Point p1 = new(1, 3, '*');
         p1.Drow();
 
-        Point p2 = new()
-        {
-            x1 = 4,
-            y1 = 5,
-            symbol = '#'
-        };
+        Point p2 = new(4, 5, '#');
         p2.Drow();
 
         Console.ReadLine();
