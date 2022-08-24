@@ -12,11 +12,18 @@ namespace Snake
         public int y;
         public char symbol;
 
-        public Point(int _x, int _y, char _symbol)
+        public Point(int x, int y, char symbol)
         {
-            x = _x;
-            y = _y;
-            symbol = _symbol;
+            this.x = x;
+            this.y = y;
+            this.symbol = symbol;
+        }
+
+        public Point(Point point)
+        {
+            this.x = point.x;
+            this.y = point.y;
+            this.symbol = point.symbol;
         }
 
         public void Drow() 
