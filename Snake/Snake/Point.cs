@@ -26,6 +26,25 @@ namespace Snake
             this.symbol = point.symbol;
         }
 
+        public void Move(int offset, Direction direction)
+        {
+            switch (direction)
+            {
+                case Direction.RIGHT:
+                    x += offset;
+                    break;
+                case Direction.LEFT:
+                    x -= offset;
+                    break;
+                case Direction.UP:
+                    y -= offset;
+                    break;
+                case Direction.DOWN:
+                    y += offset;
+                    break;
+            }
+        }
+
         public void Drow() 
         {
             Console.SetCursorPosition(x, y);
