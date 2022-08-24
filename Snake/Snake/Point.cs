@@ -9,19 +9,19 @@ namespace Snake
     internal class Point
     {
         public int x;
-        public int y1;
+        public int y;
         public char symbol;
 
         public Point(int _x, int _y, char _symbol)
         {
             x = _x;
-            y1 = _y;
+            y = _y;
             symbol = _symbol;
         }
 
         public void Drow() 
         {
-            Console.SetCursorPosition(x, y1);
+            Console.SetCursorPosition(x, y);
             Console.Write(symbol);
         }
     }
